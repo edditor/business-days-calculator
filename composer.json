@@ -1,5 +1,5 @@
 {
-    "name": "andrejsstepanovs/business-days-calculator",
+    "name": "edditor/business-days-calculator",
     "type": "library",
     "description": "Business day calculation",
     "keywords": ["business", "days"],
@@ -13,9 +13,7 @@
         }
     ],
     "require": {
-        "php": ">=5.4.0",
-        "phpunit/phpunit": "4.*",
-        "satooshi/php-coveralls": "0.*@dev"
+        "php": ">=5.4.0"
     },
     "autoload": {
         "psr-0": {
