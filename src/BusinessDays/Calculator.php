@@ -132,6 +132,24 @@ class Calculator
     }
 
     /**
+     * @param int $howManyDays
+     *
+     * @return $this
+     */
+    public function subtractBusinessDays($howManyDays)
+    {
+        $iterator = 0;
+        while ($iterator < $howManyDays) {
+            $this->getDate()->modify('-1 day');
+            if ($this->isBusinessDay($this->getDate())) {
+                $iterator++;
+            }
+        }
+
+        return $this;
+    }
+
+    /**
      * @return \DateTime
      */
     public function getDate()
